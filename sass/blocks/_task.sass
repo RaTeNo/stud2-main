@@ -1,0 +1,232 @@
+.s-task
+	max-width: 1620px;
+	margin: 0 auto
+	background: radial-gradient(93.77% 93.77% at 3.1% 57.48%, rgba(210, 255, 174, 0.38) 0%, rgba(210, 255, 174, 0) 100%), rgba(13, 185, 96, 0.05);
+	border-radius: 0px 0px 30px 30px;
+	margin-top: 14px
+	position: relative
+	z-index: 2
+
+	.s-what-title
+		span
+			color: #1F213A;
+		.mob
+			display: none
+	&-block
+		padding-top: 82px
+		padding-bottom: 97px
+	&-descr
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		font-size: 20px;
+		line-height: 150%;
+		text-align: center;
+		color: rgba(31,33,58,0.54);
+		padding-top: 11px
+	&-info
+		padding-top: 27px
+		position: relative;
+		left: 9px;
+		li
+			margin-right: 96px
+			&:last-child
+				margin-right: 0
+		&-item
+			max-width: 400px
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 150%;
+			color: #1F213A;
+			&.item1
+				.icon
+					img
+						display: none
+			.icon
+				margin-left: -10px
+				padding-top: 2px
+			.text
+				max-width: 213px
+				padding-left: 15px
+				.mob
+					display: none
+			strong
+				font-family: HelveticaNeueCyr;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 58px;
+				line-height: 130%;
+				color: #0DB960;
+				margin-top: -4px
+				display: block
+	&-slider
+		margin: 0 -10px
+		margin-top: 18px
+		position: relative
+		.swiper-slide
+			padding: 15px 15px 26px;
+		&-item
+			display: block
+			background: #FFFFFF;
+			box-shadow: 0px 15.305px 25.9151px -13.383px rgba(16, 70, 41, 0.23);
+			border-radius: 30px;
+			padding: 32px 15px 29px
+			&-logo
+				img
+					margin: 0 auto
+					border-radius: 50%
+					width: 139px;
+					height: 139px;
+			&-name
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 150%;
+				text-align: center;
+				color: #1F213A;
+				padding-top: 8px
+			&-date
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 150%;
+				text-align: center;
+				color: rgba(31,33,58,0.6);
+				padding-top: 6px
+			&-info
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 150%;
+				text-align: center;
+				color: #1F213A;
+				padding-top: 21px
+				li + li
+					margin-top: 12px
+				strong
+					font-weight: bold;
+			&-score
+				padding: 21px 15px 0
+			&-rating
+				display: block
+				.stars 
+					position: relative;
+					display: block;
+					float: left;
+					height: 16px;
+					width: 130px;
+					background: url(../img/icon-star2.png) repeat-x;
+					margin-right: 5px;
+					.on 
+						height: 16px;
+						background: url(../img/icon-star1.png) repeat-x;
+						background-position: 0 0
+						display: block
+			&-marks
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 150%;
+				color: rgba(31,33,58,0.6);
+		.s-what-slider-pagination .swiper-pagination-bullet::after
+			background-color: rgba(13,185,96,0.5)
+		.s-what-slider-pagination .swiper-pagination-bullet-active
+			background: #0DB960;
+		.s-what-slider-arrow
+			top: 45%
+
+
+@import ../responsive
+@include respond-to(desktop)
+	.s-task-info li
+		margin-right: 50px
+	.s-task
+		border-radius: 0
+@include respond-to(tablet-large)
+	.s-task-info
+		justify-content: center
+	.s-task-info li
+		width: 100%
+		margin-right: 0
+		display: -webkit-flex
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center
+		align-items: flex-start;
+		align-content: stretch;
+		flex-wrap: wrap;
+		+ li
+			margin-top: 20px
+@include respond-to(tablet)
+	.s-task-block
+		padding: 70px 0
+	.s-task-slider .s-what-slider-arrow
+		top: auto
+	.s-task-slider-item
+		max-width: 380px
+		margin: 0 auto
+	.s-task-slider
+		margin: 0px
+		margin-right: -20px
+		width: calc(100% + 20px)
+		margin-top: 19px
+	.s-task-slider-item
+		padding: 24px 19px 19px;
+		width: 280px
+	.s-task-slider .swiper-slide
+		padding: 0 
+		width: auto
+		padding-bottom: 18px
+
+@include respond-to(mobile)
+	.s-task
+		margin-top: -146px
+	.s-task .s-what-title .mob
+		display: block
+	.s-task .s-what-title .desk
+		display: none
+	.s-task-block
+		padding: 37px 0 51px
+		border-radius: 0
+	.s-task
+		border-radius: 0
+	.s-task-descr
+		font-size: 15px;
+		line-height: 150%;
+		padding-top: 5px
+		max-width: 200px
+		margin: 0 auto
+	.s-task-info
+		justify-content: flex-start
+	.s-task-info-item strong
+		display: none
+	.s-task-info-item.item1 .icon img
+		display: block
+	.s-task-info
+		position: relative
+		left: 0
+		padding-top: 23px
+	.s-task-info-item
+		justify-content: flex-start
+		width: 100%
+	.s-task-info-item .icon
+		margin-left: 0
+		width: 43px
+	.s-task-info-item .text
+		max-width: inherit
+		width: calc(100% - 43px)
+	.s-task-info li + li
+		margin-top: 17px
+	.s-task-info-item .text .mob
+		display: block
+	.s-task-info-item .text .desk
+		display: none
+	

@@ -1,0 +1,136 @@
+.s-prices
+	padding-top: 49px
+	&.style1
+		.s-prices-img
+			right: -939px;
+			top: -25px;
+	&.style3
+		padding-top: 42px
+		margin-bottom: -4px
+		.s-prices-block
+			padding: 32px 15px 29px;
+		.s-prices-img
+			left: -739px
+			right: 0
+			width: 121px
+			top: -59px
+
+	&-block
+		border: 2px dashed #0DB960;
+		box-sizing: border-box;
+		border-radius: 30px;
+		padding: 25px 15px 27px;
+		margin-left: 4px;
+		position: relative
+
+	&-title
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 550;
+		font-size: 30px;
+		line-height: 130%;
+		text-align: center;
+		color: #1F213A;
+		position: relative
+		z-index: 2
+		&.style3
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: bold;
+			font-size: 20px;
+			line-height: 150%;
+		span
+			color: #0DB960
+	&-descr
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 150%;
+		color: rgba(31,33,58,0.9)
+		text-align: center
+		padding-top: 11px
+		position: relative
+		z-index: 2
+	&-img
+		position: absolute;
+		left: 0;
+		right: -712px;
+		margin: 0 auto;
+		top: -32px;
+		width: 110px;
+		z-index: 2
+
+@import ../responsive
+@include respond-to(desktop)
+	.s-prices.style1 .s-prices-img
+		right: -633px;
+		top: -56px;
+@include respond-to(tablet-large)
+	.s-prices-img
+		right: -580px
+	.s-prices.style1 .s-prices-img
+		right: -523px;
+		top: -23px;
+@include respond-to(tablet)
+	.s-prices-img
+		right: -280px
+	.s-prices.style1 .s-prices-img
+		right: -323px
+	.s-prices.style3 .s-prices-img
+		left: auto
+		right: 100px
+		top: -28px
+
+@include respond-to(mobile)
+	.s-prices
+		padding-top: 31px
+	.s-prices-title
+		font-size: 20px;
+		line-height: 150%;
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 900;
+	.s-prices-block
+		padding-top: 18px
+		padding-bottom: 22px
+	.s-prices-descr
+		padding-top: 4px
+	.s-prices-img
+		right: -73px
+		margin: auto
+		left: auto
+		top: -23px
+	.s-prices.style1 .s-prices-img
+		right: 100px
+	.s-prices.style3
+		padding-top: 34px
+		margin-bottom: 0
+	.s-prices.style3 .s-prices-block
+		padding: 18px 15px 21px;
+		margin-left: 0
+		.br
+			display: block
+	.s-prices-title.style3
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 20px;
+		line-height: 150%;
+
+@include respond-to(mobile1)
+	.s-prices.style1 .s-prices-img
+		right: 0px;
+	.s-prices.style3 .s-prices-img
+		right: 0
+		width: auto
+		top: -23px
+
+@include respond-to(mobile2)
+	.s-prices.style1 .s-prices-title
+		max-width: 250px
+		margin: 0 auto
+		.br
+			display: block
+	.s-prices.style1 .s-prices-img
+		right: -72px;

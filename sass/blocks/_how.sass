@@ -1,0 +1,87 @@
+.s-how
+	padding-top: 82px
+	padding-bottom: 100px
+	&-line
+		padding-top: 40px
+		margin: 0 -25px
+		padding-left: 4px
+	&-block
+		padding: 0 25px
+		width: 33.3%
+	&-item
+		height: 100%
+		background: rgba(243, 246, 249, 0.6);
+		border-radius: 30px;
+		padding: 38px 29px 31px
+		&-top
+		&-num
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 60px;
+			line-height: 100%;
+			color: #0DB960;
+		&-text
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 150%;
+			color: #1F213A;
+			padding-left: 19px
+		&-descr
+			padding-top: 12px
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 150%;
+			color: #1F213A;
+			max-width: 260px
+
+@import ../responsive
+@include respond-to(desktop)
+	.s-how-item-text
+		font-size: 17px
+@include respond-to(tablet-large)
+	.s-how-block
+		padding: 0 15px
+	.s-how-line
+		margin: 0 -15px
+	.s-how-item
+		padding: 20px 15px
+@include respond-to(tablet)
+	.s-how-block
+		width: 100%
+		+ .s-how-block
+			padding-top: 25px
+	.s-how-item-descr
+		max-width: 100%
+
+@include respond-to(mobile)
+	.s-how
+		padding-top: 35px
+		padding-bottom: 50px
+	.s-how-line
+		padding-top: 30px
+		padding-left: 0
+	.s-how-item-text
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 150%;
+	.s-how-item-num
+		font-size: 49px;
+		line-height: 100%;
+	.s-how-item
+		padding: 26px 19px 19px
+	.s-how-item-top
+		max-width: 200px
+	.s-how-item-descr
+		max-width: inherit
+		margin-right: -5px
+		.br
+			display: block
+	.s-how-block + .s-how-block
+		padding-top: 20px

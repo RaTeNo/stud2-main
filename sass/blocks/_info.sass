@@ -1,0 +1,255 @@
+.s-info
+	padding-top: 43px
+	&.style3
+		padding-bottom: 25px
+	&-inner
+		position: relative
+	&-img
+		position: absolute
+		left: 52px;
+		top: -25px;
+		display: block
+		width: 100%
+		height: 100%
+		img
+			margin: 0 auto
+	&-line
+		margin: 0 -15px
+		position: relative
+		z-index: 2
+	&-block
+		padding: 0 15px
+		width: 50%
+	&-status
+		padding-left: 4px
+		height: 100%
+		display: flex;
+		flex-direction: column;
+		padding-bottom: 82px
+		position: relative
+		.s-info-img
+			display: none
+		&-top
+			flex-grow: 1;
+		.s-what-title
+			text-align: left
+		&-list
+			padding-top: 13px
+			max-width: 426px;
+			li
+				font-family: HelveticaNeueCyr;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 30px;
+				line-height: 130%;
+				color: #1F213A;
+				padding: 24.5px 0
+				border-bottom: 1px solid rgba(204,213,235,0.8)
+				&:last-child
+					border-bottom: 0
+				span
+					color: #0DB960;
+		&-button
+			padding-top: 30px
+		&-btn
+			display: flex
+			height: 50px;
+			max-width: 312px;
+			width: 100%
+			font-weight: bold;
+			font-size: 15px;
+			line-height: 150%;
+			font-family: Roboto;
+	&-tasks
+		max-width: 471px;
+		width: 100%
+		&-title
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 30px;
+			line-height: 130%;
+			color: #0DB960;
+		&-list
+			padding-top: 35px
+			> li
+				+ li
+					margin-top: 20px
+				&:last-child
+					.s-info-tasks-item
+						box-shadow: none
+						background: linear-gradient(180deg, #FFFFFF 7.75%, rgba(255, 255, 255, 0) 23.53%);
+		&-item
+			background: #FFFFFF;
+			box-shadow: 0px 22.305px 66.9151px -13.383px rgba(16, 70, 41, 0.23);
+			border-radius: 30px;
+			padding: 30px 28px 32px
+			&-price
+				background: rgba(243, 246, 249, 0.6);
+				border-radius: 20px;
+				width: 160px;
+				padding: 28px 15px 28px 30px
+			&-sum
+				font-family: HelveticaNeueCyr;
+				font-style: normal;
+				font-weight: 550;
+				font-size: 20px;
+				line-height: 120%;
+				color: #0DB960;
+			&-time
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 150%;
+				text-align: left
+				color: rgba(31,33,58,0.4);
+				padding-top: 12px
+			&-info
+				width: calc(100% - 160px)
+				padding-left: 30px
+			&-cats
+				margin-bottom: -10px
+			&-cat
+				margin-right: 10px
+				margin-bottom: 10px
+				background: rgba(13, 185, 96, 0.09);
+				border-radius: 30px;
+				height: 28px
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 28px
+				text-align: center;
+				color: #0DB960;
+				padding: 0 21px
+				display: inline-flex
+				&:last-child
+					margin-right: 0
+			&-title
+				font-family: HelveticaNeueCyr;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 20px;
+				line-height: 150%;
+				color: #1F213A;
+				padding-top: 8px
+			&-result
+				padding-top: 12px
+				li
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 15px;
+					line-height: 150%;
+					color: rgba(31,33,58,0.6);
+					+ li
+						margin-top: 11px
+					span
+						color: #1F213A;
+						padding-left: 4px
+
+@import ../responsive
+@include respond-to(desktop)
+	.s-info-img
+		left: 7px
+	.s-info-status-list li
+		font-size: 23px
+@include respond-to(tablet-large)
+	.s-info-tasks-item
+		padding: 20px 20px
+	.s-info-tasks-item-price
+		width: 100%
+		padding: 10px 15px
+		order: 2
+		margin-top: 15px
+	.s-info-tasks-item-sum
+		br
+			display: none
+	.s-info-tasks-item-info
+		padding-left: 0
+		width: 100%
+		order: 1
+	.s-info-img
+		max-width: 467px;
+		left: 141px;
+	.s-info-tasks-item-sum
+		font-size: 17px
+	.s-info-tasks-item-time
+		padding-top: 0
+	.s-info-tasks
+		padding-top: 9px
+@include respond-to(tablet)
+	.s-info-block
+		width: 100%
+	.s-info-img
+		left: 236px
+	.s-info-right 
+		display: block
+	.s-info-status
+		padding-left: 0
+		padding-bottom: 40px
+	.s-info-tasks-item-price
+		background: none
+		padding: 0
+
+@include respond-to(mobile)
+	.s-info
+		padding-top: 14px
+	.s-info-status .s-what-title
+		text-align: center
+	.s-info-status .s-what-line
+		justify-content: center
+	.s-info-status-list li
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 150%;
+		padding: 12.5px 0;
+	.s-info-status-list
+		padding-top: 9px
+	.s-info-status-button
+		padding-top: 18px
+	.s-info-img
+		position: relative
+		left: auto
+		max-width: inherit;
+		right: auto
+		width: auto
+		margin: 0 -28px
+		top: auto
+		margin-top: -5px
+		margin-bottom: -33px
+		display: none
+	.s-info-status .s-info-img
+		display: block
+	.s-info-tasks
+	.s-info-tasks-title
+		font-size: 20px;
+		line-height: 150%;
+		text-align: center
+	.s-info-tasks-list
+		padding-top: 25px
+	.s-info-tasks-item-title
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 150%;
+	.s-info-tasks-item-result
+		border-bottom: 1px solid rgba(204,213,235,0.8)
+		padding-bottom: 9px
+	.s-info-tasks-item-sum
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 150%;
+	.s-info-tasks-item-price
+		margin-top: 11px
+	.s-info-tasks-list > li:last-child .s-info-tasks-item
+		background: linear-gradient(180deg, #FFFFFF 7.75%, rgba(255, 255, 255, 0) 23.53%);
+		height: 196px
+

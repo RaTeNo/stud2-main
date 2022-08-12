@@ -1,0 +1,307 @@
+.s-what
+	padding-top: 84px
+	background-image: url("../img/what-bg1.svg")
+	background-repeat: no-repeat
+	background-position: 0 -143px;
+	padding-bottom: 43px
+	&.style1
+		position: relative
+		z-index: 2
+		background: none
+		padding-bottom: 54px
+		.s-what-slider
+			padding-top: 37px
+		.s-what-slider-arrow
+			top: 52%
+	&-title
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 120%;
+		text-align: center;
+		color: #1F213A;
+		span
+			color: #0DB960
+	&-line
+		padding-top: 23px
+		span
+			background: #0DB960;
+			border-radius: 6px;
+			height: 4px
+			width: 13px
+			margin-right: 10px
+			&:last-child
+				margin-right: 0
+			&.style1
+				width: 53px
+	&-slider
+		margin: 0 -10px
+		padding-top: 35px
+		position: relative
+		&-arrow
+			transform: translateY(-50%)
+			position: absolute
+			top: 49%
+			width: 60px
+			height: 60px
+			display: block
+			z-index: 3
+			padding: 0
+			margin: 0
+			cursor: pointer
+			&.next
+				right: -126px
+				background-image: url("../img/icon-right.svg")
+			&.prev
+				background-image: url("../img/icon-left.svg")
+				left: -126px
+		.swiper
+			width: 100%;
+			height: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		.swiper-slide
+			width: 100%
+			padding: 15px 15px 26px
+		&-item
+			height: 355px
+			border: 2px solid rgba(204, 213, 235, 0.4);
+			box-sizing: border-box;
+			border-radius: 30px;
+			padding: 26px 31px
+			transition: .3s all
+			background-repeat: no-repeat
+			background-position: right 0
+			&.style1
+				background-image: url("../img/what-icon1.svg")
+			&.style2
+				background-image: url("../img/what-icon2.svg")
+			&.style3
+				background-image: url("../img/what-icon3.svg")
+			&:hover
+				box-shadow: 0px 12.305px 30.9151px -13.383px rgba(16, 70, 41, 0.23);
+				border: 2px solid #fff;
+				background-color: #FFFFFF
+			&-title
+				font-family: HelveticaNeueCyr;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 20px;
+				line-height: 150%;
+				color: #1F213A;
+			&-price
+				font-family: HelveticaNeueCyr;
+				font-style: normal;
+				font-weight: 900;
+				font-size: 20px;
+				line-height: 150%;
+				color: #0DB960;
+				padding-top: 6px
+			&-list
+				padding-top: 23px
+				li
+					border-bottom: 1px solid rgba(204,213,235,0.8)
+					&:last-child
+						border-bottom: 0
+				&-item
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 15px;
+					line-height: 150%;
+					color: #1F213A;
+					padding: 12px 0
+					.left
+						width: 60%
+						padding-right: 10px
+					.right
+						width: 40%
+					strong
+						font-weight: bold;
+			&-bottom
+				padding-top: 16px
+			&-btn
+				font-weight: bold;
+				font-size: 15px;
+				text-align: center;
+				border: 2px solid rgba(13, 185, 96, 0.3);
+				width: 146px;
+				position: relative
+				z-index: 2
+				&:hover
+					border: 2px solid #0DB960
+			&-reviews
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 150%;
+				color: #1F213A;
+				padding-right: 17px
+				span
+					padding-left: 10px
+		&-pagination
+			position: relative
+			bottom: auto
+			padding-top: 22px
+			display: -webkit-flex
+			display: -moz-flex;
+			display: -ms-flex;
+			display: -o-flex;
+			display: flex;
+			justify-content: center
+			align-items: center
+			align-content: stretch;
+			flex-wrap: wrap;
+			&.swiper-horizontal > .swiper-pagination-bullets, &.swiper-pagination-bullets.swiper-pagination-horizontal, &.swiper-pagination-custom, &.swiper-pagination-fraction
+				bottom: auto
+
+			.swiper-pagination-bullet
+				width: 14px;
+				height: 14px;
+				border-radius: 50%
+				background-color: transparent
+				position: relative
+				cursor: pointer
+				&:after
+					width: 10px
+					height: 10px
+					content: ""
+					position: absolute
+					left: 0
+					top: 0
+					right: 0
+					bottom: 0
+					display: block
+					margin: auto
+					background: rgba(204,213,235,0.5)
+					border-radius: 50%
+					transition: .3s all
+				opacity: 1
+				transition: .3s all
+			.swiper-horizontal > .swiper-pagination-bullets .swiper-pagination-bullet, .swiper-pagination-horizontal.swiper-pagination-bullets .swiper-pagination-bullet
+				margin: 0 7px
+			.swiper-pagination-bullet-active
+				background: radial-gradient(93.77% 93.77% at 3.1% 57.48%, rgba(210, 255, 174, 0.38) 0%, rgba(210, 255, 174, 0) 100%), #0DB960;
+				&:after
+					opacity: 0
+	&-button
+		padding-top: 47px
+	&-btn
+		margin: 0 auto
+		max-width: 280px;
+		width: 100%
+	
+@import ../responsive
+@include respond-to(desktop-wide1)
+	.s-what-slider-arrow.next
+		right: -50px
+	.s-what-slider-arrow.prev
+		left: -50px
+@include respond-to(desktop-wide2)
+	.s-what-slider-arrow.next
+		right: 0px
+	.s-what-slider-arrow.prev
+		left: 0px
+
+@include respond-to(desktop)
+	.s-what-slider-item
+		padding: 26px 15px;
+	.s-what-slider-item-reviews
+		padding-right: 0
+	.s-what-slider-item-btn
+		width: 135px
+	.s-what
+		background-position: -64px -158px;
+
+
+@include respond-to(tablet)
+	.s-what-slider-arrow
+		transform: translateY(0%);
+		top: auto
+		bottom: -6px
+		width: 30px
+		height: 30px
+	.s-what-slider-arrow.next
+		background-image: url("../img/icon-right-mob.svg")
+	.s-what-slider-arrow.prev
+		background-image: url("../img/icon-left-mob.svg")
+	.s-what-title
+		font-size: 35px
+	.s-what-slider
+		padding-top: 15px
+		margin: 0
+		margin-right: -20px
+		width: calc(100% + 20px)
+	.s-what-slider-item-title
+		font-size: 18px;
+		line-height: 150%;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+	.s-what-slider-item
+		padding: 18px 19px;
+		width: 280px;
+		background-position: 173% -13px;
+	.s-what-slider-item-price
+		font-size: 15px;
+		line-height: 150%;
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		padding-top: 1px
+	.s-what-slider-item-list
+		padding-top: 8px
+	.s-what-slider-item-list-item .right
+		text-align: right
+	.s-what-slider-item-bottom
+		padding-top: 10px
+		justify-content: center
+	.s-what-slider-item-button
+		width: 100%
+	.s-what-slider-item-btn
+		width: 100%
+	.s-what-slider-item-reviews
+		padding-top: 10px
+	.s-what-slider-item
+		height: 331px
+	.s-what-slider .swiper-slide
+		padding-left: 0
+		padding-right: 0
+		width: auto
+	.s-what-slider-arrow.next
+		right: 20px
+	.s-what-slider-pagination
+		padding-right: 45px
+		padding-left: 25px
+		padding-top: 12px
+		height: 26px
+	.s-what-slider-arrow
+		bottom: -9px
+	.s-what-button
+		padding-top: 40px
+	.s-what-slider-item.style2
+		background-position: 191% -27px;
+	.s-what-slider-item.style3
+		background-position: 191% -27px;
+	.s-what.style1 .s-what-slider-arrow
+		top: auto
+
+
+@include respond-to(mobile)
+	.s-what-title
+		font-size: 30px;
+		line-height: 130%;
+	.s-what
+		padding-top: 39px
+	.s-what-line
+		padding-top: 12px
+	.s-what
+		background: none
+		padding-bottom: 13px
+	.s-what.style1
+		padding-top: 34px
+		padding-bottom: 15px
+	.s-what.style1 .s-what-slider
+		padding-top: 16px

@@ -1,0 +1,120 @@
+.s-top.style1.style3
+	.wrap
+		.s-top-inner
+			.s-top-img
+					picture
+						source(srcset='img/top-img1-mob.png' media='(max-width: 565px)')
+						img.img-responsive(src="img/top-img2.png" alt="img")
+			.s-top-line.flex
+				.s-top-block.block1
+					.s-top-contant
+						h1.s-top-title.style3 Срочная помощь <strong>студентам в написании работ в Москве!</strong> 
+						ul.s-top-options.style3.flex
+							li
+								.s-top-options-item.inflex.flexalcenter.flexcenter
+									img(src="img/top-bascket.svg" alt="img")
+									span.text Цена курсовой от 1 000 руб.
+							li
+								.s-top-options-item.inflex.flexalcenter.flexcenter.item2
+									img(src="img/top-time.svg" alt="img")
+									span.text Срок от 12 ч
+						ul.s-top-list.flex.flexalstretch.style1.style3
+							li
+								.s-top-item.flex
+									.s-top-item-icon
+										img.img-responsive(src="img/top-icon2.svg" alt="img")
+									.s-top-item-text 21 день  <br>на проверку
+							li
+								.s-top-item.flex
+									.s-top-item-icon
+										img.img-responsive(src="img/top-icon3.svg" alt="img")
+									.s-top-item-text Бесплатные  <br>доработки
+				.s-top-block.block2
+					.s-top-right.flex.flexright
+						.s-top-form-button-mobile
+							a(href="#popup" data-effect="mfp-zoom-in").s-top-form-btn.flex.flexcenter.flexalcenter.open-popup
+								span Узнать стоимость
+
+						.s-top-form
+							form(action="main.php" method="post" enctype="multipart/form-data")
+								.s-top-form-title Узнай стоимость  своей работы
+								.s-top-form-descr.flex.flexalcenter и получи бонус <strong class="flex flexnwr flexalcenter"><img src="img/top-gift.svg" alt="img"><span>200 руб.</span></strong> на первый заказ
+								.s-top-form-line.flex
+									.s-top-form-block.style1
+										.s-top-form-item
+											select.js-select-type(name="select-type")
+												option(value="")
+												option(value="Курсовая") Курсовая
+												option(value="Диплом") Диплом
+												option(value="Курсовая") Курсовая
+									.s-top-form-block.style1
+										.s-top-form-item
+											select.js-select-subject(name="select-subject")
+												option(value="")
+												option(value="Математика") Математика
+												option(value="Информатика") Информатика
+												option(value="Литература") Литература
+									.s-top-form-block
+										.s-top-form-item
+											input(type="text" name="subject" placeholder="Тема")
+									.s-top-form-block
+										.s-top-form-line.flex
+											.s-top-form-block
+												.s-top-form-item
+													select.js-select-term(name="select-term")
+														option(value="")
+														option(value="2 дня") 2 дня
+														option(value="2 дня") 2 дня
+														option(value="2 дня") 2 дня
+											.s-top-form-block
+												.s-top-form-item
+													.s-top-form-item.pages.flex.flexalcenter
+														.text Страниц
+														input(type="text" name="pagesfrom" placeholder="От")
+														input(type="text" name="pagesto" placeholder="До")
+								.s-top-form-hr
+								.s-top-form-bottom
+									.s-top-form-line.flex
+										.s-top-form-block
+											.s-top-form-item
+												textarea(name="mes" placeholder="Комментарий")
+										.s-top-form-block
+											.s-top-form-item
+												.s-top-form-item-line.flex.flexalcenter.flexbetween
+													.s-top-form-item-file
+														.s-top-form-item-file-placeholder Файлы (при наличии)
+														label(for="file-upload").flex.flexalcenter.flexcenter.s-top-form-btn
+															span.text Добавить
+															input#file-upload(type="file")
+													.s-top-form-item-check
+														.b-checkbox
+															input#check1(type="checkbox" name="check1"  value="Практическая часть")
+															label(for="check1")
+																span.icon
+																span.text Практическая часть
+												.s-top-form-item-line.flex.flexalcenter.flexbetween
+													.s-top-form-item.input
+														input(type="text" name="email" placeholder="E-mail")
+													.s-top-form-item.select1
+														select.js-select-check(name="select-check")
+															option(value="Antiplagiat.ru") Antiplagiat.ru
+															option(value="Antiplagiat.ru") Antiplagiat.ru
+															option(value="Antiplagiat.ru") Antiplagiat.ru
+													.s-top-form-item
+														select.js-select-check(name="select-percent")
+															option(value="50%") 50%
+															option(value="50%") 50%
+															option(value="50%") 50%
+								.s-top-form-item
+									.s-top-form-options.flex.flexnwr.flexalcenter
+										.s-top-form-button
+											button(type="submit").s-top-form-btn.flex.flexcenter.flexalcenter
+												span Узнать стоимость
+										.s-top-form-item-check
+											.b-checkbox
+												input#check2(type="checkbox" name="agree"  value="Даю согласие на обработку персональных данных" checked)
+												label(for="check2")
+													span.icon
+													span.text Даю согласие на обработку персональных данных
+
+						

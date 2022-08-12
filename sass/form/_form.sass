@@ -1,0 +1,109 @@
+.s-popup
+	background: #FFFFFF;
+	max-width: 400px
+	margin: 0 auto
+	position: relative
+	.mfp-close
+		position: absolute
+		top: 8px;
+		right: 12px;
+		opacity: 1
+		display: block
+		width: auto
+		height: auto
+		z-index: 10
+		&:hover
+			svg
+				g
+					opacity: 0.5
+		svg
+			g
+				opacity: 0.1
+				transition: .3s all
+	.s-top-form
+		padding: 14px 13px 40px
+		border-radius: 0
+		box-shadow: none
+	.s-top-form-title
+		max-width: 200px
+	.s-top-form-descr strong
+		padding-left: 11px
+	.s-top-form-block.style1
+		width: 100%
+	.s-top-form-item-file
+		width: 100%
+		margin-right: 0
+	.s-top-form-block
+		padding-bottom: 14px
+	.s-top-form-item-file label
+		right: 8px
+		display: flex
+		justify-content: center
+		span
+			display: block
+			text-align: center
+	.s-top-form-item-file-placeholder
+		font-size: 15px;
+		padding: 0 28px
+		padding-right: 110px
+		span
+			font-size: 12px;
+	.s-top-form-item.pages input
+		margin-right: 18px
+		&:last-child
+			margin-right: 0
+	.s-top-form-bottom
+		padding-top: 0
+		margin-top: -12px
+	.s-top-form-item-check
+		width: 100%
+	.s-top-form-bottom .s-top-form-item-check .b-checkbox input + label .text
+		padding-left: 0
+		padding-right: 12px
+	.s-top-form-item-check .b-checkbox input + label
+		padding: 0 7px
+	.s-top-form-item-line + .s-top-form-item-line
+		padding-top: 14px
+	.s-top-form-bottom .s-top-form-item.select1
+		margin-right: 10px
+	.s-top-form-item.select1
+		width: 167px
+		.select2-container--default .select2-selection--single .select2-selection__rendered
+			padding-left: 34px;
+			padding-right: 37px;
+	.s-top-form-bottom .s-top-form-block + .s-top-form-block
+		padding-top: 0
+	.s-top-form-item textarea
+		padding: 13px 33px
+		height: 70px;
+	.s-top-form-bottom .s-top-form-item.input
+		margin-right: 0
+		padding-top: 10px
+		input
+			width: 100%
+			padding: 0 33px
+	.s-top-form-options
+		flex-wrap: wrap
+		padding-top: 9px
+		.s-top-form-item-check
+			order: 1
+			width: 100%
+			max-width: 220px
+		.s-top-form-item-check .b-checkbox input + label .text
+			padding-left: 8px
+		.s-top-form-button
+			order: 2
+			width: 100%
+			margin-right: 0
+			padding-top: 18px
+
+@import ../responsive
+@include respond-to(desktop)
+	
+@include respond-to(tablet-large)
+	
+@include respond-to(tablet)
+	
+
+@include respond-to(mobile)
+	

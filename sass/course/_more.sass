@@ -1,0 +1,79 @@
+.s-more
+	background: radial-gradient(93.77% 93.77% at 3.1% 57.48%, rgba(210, 255, 174, 0.38) 0%, rgba(210, 255, 174, 0) 100%), rgba(13, 185, 96, 0.05);
+	border-radius: 30px;
+	padding: 84px 0 95px
+	max-width: 1620px;
+	margin: 0 auto
+	margin-top: 45px
+	margin-bottom: 48px
+	&-line
+		margin: 0 -15px
+		padding-top: 42px
+	&-block
+		padding: 0 15px
+		width: 25%
+	&-list
+		padding-left: 5px
+		max-width: 255px
+		li
+			padding-left: 23px
+			position: relative
+			&.hidden
+				display: none
+			&:after
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				display: block
+				background-image: url("../img/more-icon1.svg")
+				width: 12px
+				height: 24px
+			+ li
+				margin-top: 16px
+			a
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 150%;
+				color: #1F213A;
+				border-bottom: 1px solid transparent
+				transition: .3s all
+				&:hover
+					color: #0DB960;
+					border-bottom: 1px solid
+
+@import ../responsive
+@include respond-to(desktop)
+	.s-more
+		border-radius: 0
+@include respond-to(tablet-large)
+	.s-more-block
+		width: 33.3%
+		&.hide-md
+			display: none
+@include respond-to(tablet)
+	.s-more-block
+		width: 50%
+		&.hide-sm
+			display: none
+	.s-more
+		padding-top: 36px
+		padding-bottom: 46px
+		margin-bottom: 0
+
+@include respond-to(mobile)
+	.s-more-block
+		width: 100%
+		&.hide-xs
+			display: none
+	.s-more-line
+		padding-top: 21px
+	.s-more-list
+		padding-left: 0
+		max-width: inherit
+	.s-more-list li + li
+		margin-top: 11px
+	.s-more-list li.hidden
+		display: block

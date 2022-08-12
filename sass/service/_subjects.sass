@@ -1,0 +1,67 @@
+.s-subjects
+	background: radial-gradient(93.77% 93.77% at 3.1% 57.48%, rgba(210, 255, 174, 0.38) 0%, rgba(210, 255, 174, 0) 100%), rgba(13, 185, 96, 0.05);
+	border-radius: 30px;
+	max-width: 1620px;
+	margin: 0 auto
+	margin-top: 57px
+	padding-top: 84px
+	padding-bottom: 86px
+	margin-bottom: 100px
+	&-list
+		padding-top: 51px
+		max-width: 1140px
+		margin: 0 auto
+		margin-bottom: -21px
+		li
+			padding: 0 7px
+			padding-bottom: 21px
+			&.active
+				.s-header-btn
+					color: #fff
+					border: 0
+					&:before
+						-webkit-transform: scaleX(1);
+						transform: scaleX(1);
+		a
+			white-space: nowrap;
+		.s-header-btn
+			width: auto
+			padding: 0 22px
+			span
+				padding-left: 0
+	.s-subjects-arrow
+		padding-top: 45px
+		text-align: center
+
+
+@import ../responsive
+	
+@include respond-to(desktop)
+	.s-subjects
+		border-radius: 0
+@include respond-to(tablet)
+	.s-subjects
+		margin-top: 27px
+		padding-top: 36px
+		padding-bottom: 39px;
+		margin-bottom: 22px;
+	.s-subjects-list
+		padding-top: 32px
+		margin-bottom: -15px
+	.s-subjects-list li
+		padding-bottom: 15px
+	.s-subjects .s-subjects-arrow
+		padding-top: 30px
+
+
+@include respond-to(mobile)
+	.s-subjects
+		.s-what-title
+			font-size: 20px;
+			line-height: 150%;
+	.s-subjects-list li:nth-child(n+4)
+		display: none
+
+
+@include respond-to(mobile1)
+	

@@ -1,0 +1,98 @@
+.s-correct
+	padding-top: 83px
+	.s-what-title
+		span
+			padding-left: 8px
+	&-line
+		padding-top: 53px
+		margin: 0 -10px
+	&-block
+		padding: 0 10px
+		width: 50%
+	&-item
+		background: rgba(243, 246, 249, 0.6);
+		border-radius: 30px;
+		position: relative
+		padding: 10px 52px 14px
+		height: 232px;
+		&-img
+			position: absolute
+			top: -11px;
+			right: 12px;
+		&-text
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 30px;
+			line-height: 130%;
+			color: #0DB960		
+	&-item1
+		padding-left: 29px;
+		padding-top: 9px;
+	&-list
+		max-width: 475px
+		p + p
+			padding-top: 12px
+		li + li
+			padding-top: 29px
+	&-descr
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 150%;
+		color: #1F213A;
+		strong
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 150%;
+
+
+@import ../responsive
+@include respond-to(tablet-large)
+	.s-correct
+		.s-what-title
+			span
+				display: block
+				padding-left: 0
+
+@include respond-to(tablet)
+	.s-correct
+		padding-top: 70px
+	.s-correct-block
+		width: 100%
+		+ .s-correct-block
+			padding-top: 25px
+	.s-correct-item1
+		padding-left: 0
+	.s-correct-item-img
+		max-width: 255px
+		top: 15px
+
+@include respond-to(mobile)
+	.s-correct
+		padding-top: 36px
+		.s-what-title
+			max-width: 250px
+			margin: 0 auto
+	.s-correct-line
+		padding-top: 30px
+	.s-correct-item-text
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 150%;
+	.s-correct-item
+		height: auto
+		padding: 44px 26px 41px
+	.s-correct-item-img
+		right: 27px
+		top: 50%
+		transform: translateY(-50%)
+	.s-correct-item1
+		display: none
+	.s-correct-block + .s-correct-block
+		padding-top: 0

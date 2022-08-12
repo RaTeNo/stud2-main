@@ -1,0 +1,33 @@
+.s-course
+	.s-main-img
+		right: -13px
+	.s-main-info-img
+		top: 5px;
+		right: -15px;
+	&-faq
+		position: relative
+		.s-main-reviews-img
+			top: 476px
+
+@import ../responsive
+
+	
+
+
+
+@include respond-to(desktop)
+	
+@include respond-to(tablet-large)
+	.s-course .s-main-img
+		display: none
+@include respond-to(tablet)
+	
+
+@include respond-to(mobile)
+	.s-course .s-main-img
+		display: block
+		top: 138px
+		right: 0
+	.s-course
+		.s-task
+			margin-top: 0

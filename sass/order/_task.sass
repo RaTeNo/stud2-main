@@ -1,0 +1,218 @@
+.s-order
+	&-task
+		padding-top: 83px
+		background-image: url("../img/order-bg1.svg")
+		background-repeat: no-repeat
+		background-position: -7px -97px
+		padding-bottom: 42px
+		.s-what-title
+			max-width: 820px
+			margin: 0 auto
+		&-cont
+			background: rgba(243, 246, 249, 0.6);
+			border-radius: 30px;
+			padding: 30px 34px
+			margin-top: 50px
+		&-info
+			padding-bottom: 19px
+			margin-bottom: -10px
+			li
+				margin-right: 39px
+				padding-bottom: 10px
+				&:last-child
+					margin-right: 0
+			&-item
+				.text
+					padding-left: 10px
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 12px;
+					line-height: 150%;
+					color: rgba(31,33,58,0.6);
+					span
+						color: #1F213A;
+						padding-left: 4px
+		&-title
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 150%;
+			color: #0DB960;
+		&-descr
+			padding-top: 23px
+			margin-right: -5px
+			padding-bottom: 10px
+			&-label
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 15px;
+				line-height: 150%;
+				color: #1F213A
+			&-text
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 150%;
+				color: rgba(31,33,58,0.6);
+				padding-top: 10px
+		&-about
+			margin-top: 10px
+			background: #FFFFFF;
+			border-radius: 30px;
+			padding: 32px 15px
+			&-block
+				width: 50%
+				padding: 0 15px
+				position: relative
+				&:last-child
+					&:after
+						display: none
+				&:after
+					content: ""
+					position: absolute
+					top: 50%
+					transform: translateY(-50%)
+					display: block
+					width: 1px;
+					height: 89px;
+					background: rgba(204,213,235,0.8);
+					right: 0
+			&-list
+				&.style2
+					padding-left: 25px
+				li
+					font-family: Roboto;
+					font-style: normal;
+					font-weight: normal;
+					font-size: 15px;
+					line-height: 150%;
+					color: rgba(31,33,58,0.6);
+					+ li
+						margin-top: 10px
+					span
+						color: #1F213A;
+						padding-left: 5px
+					a
+						font-family: Roboto;
+						font-style: normal;
+						font-weight: normal;
+						font-size: 15px;
+						line-height: 150%;
+						border-bottom: 1px solid
+						color: #0DB960;
+						transition: .3s all
+						&:hover
+							border-bottom: 1px solid transparent
+	&-bg2
+		position: absolute
+		right: 0
+		top: 120px
+	.s-reviews
+		padding-top: 0
+		padding-bottom: 45px
+
+
+@import ../responsive
+@include respond-to(desktop-wide)
+	.s-order-task
+		background-position: -68px -97px;
+	.s-order-bg2
+		right: -146px
+@include respond-to(desktop)
+
+@include respond-to(tablet-large)
+	.s-order-img
+		display: none
+	.s-order
+		padding-top: 72px
+	.s-order-bg2
+		display: none
+	.s-order-task-info-item .text span
+		display: block
+		padding-left: 0
+	.s-order-task-info-item
+		align-items: flex-start
+@include respond-to(tablet)
+	.s-order-task
+		background: none
+	.s-order-task
+		padding-top: 70px
+	.s-order-task-info li
+		margin-right: 15px
+	.s-order-task-info
+		justify-content: space-between
+	.s-order-task-about-block
+		width: 100%
+		+ .s-order-task-about-block
+			margin-top: 20px
+	.s-order-task-about-list.style2
+		padding-left: 0
+		margin-top: 20px
+	.s-order-task-about-block::after
+		display: none
+	.s-order-task-about-list.style2:after
+		content: "";
+		position: absolute;
+		display: block;
+		background: rgba(204, 213, 235, 0.8);
+		right: 0;
+		top: 0
+		left: 0
+		width: 100%
+		height: 1px
+	.s-order-task-cont
+		margin: 0 -20px
+		margin-top: 30px
+		border-radius: 0
+		padding: 40px 20px;
+
+
+@include respond-to(mobile)
+	.s-order-task .s-what-title
+		font-size: 20px;
+		line-height: 150%;
+		text-align: left
+	.s-order-task
+		padding-top: 25px
+		padding-bottom: 15px
+		.s-what-line
+			justify-content: flex-start
+	.s-order-task-info
+		margin: 0 -15px -10px
+		max-width: 287px
+	.s-order-task-info li
+		padding: 0 15px 10px
+		width: 50%
+		margin-right: 0
+	.s-order-task-descr-text
+		line-height: 153%
+	.s-order-task-descr
+		margin-right: 0
+	.s-order-task-about
+		padding: 20px 5px
+	.s-order-task-about-list li span
+		padding-left: 0
+		display: block
+		padding-top: 7px
+	.s-order-task-about
+		padding: 20px
+	.s-order-task-about-line
+		margin: 0 -15px
+	.s-order-task-about-list.style2
+		li span
+			padding-left: 5px
+			display: inline
+			padding-top: 0
+	.s-order .s-reviews
+		margin-top: -150px
+		padding-bottom: 0
+
+
+@include respond-to(mobile1)
+	.s-order-task .s-what-title
+		max-width: 220px
+		margin-left: 0

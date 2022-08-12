@@ -1,0 +1,104 @@
+.s-pay
+	position: relative
+	&-img
+		position: absolute
+		top: -301px;
+		left: 0
+		z-index: 2
+		background-position: 0 0
+	&-inner
+		background: rgba(243, 246, 249, 0.6);
+		border-radius: 30px;
+		max-width: 1620px;
+		padding-top: 84px
+		margin: 0 auto
+		position: relative
+		padding-bottom: 100px
+	&-line
+		padding-top: 50px
+		margin: 0 -10px
+	&-block
+		padding: 0 10px
+		width: 50%
+	&-item
+		height: 100%
+		background: #FFFFFF;
+		border-radius: 30px;
+		position: relative
+		padding: 28px 34px 56px
+		&-text
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 20px;
+			line-height: 150%;
+			color: rgba(31,33,58,0.9);
+			max-width: 250px
+			position: relative
+			z-index: 2
+		&-img
+			position: absolute
+			top: -23px;
+			right: 19px;
+
+
+@import ../responsive
+
+@include respond-to(tv)
+	.s-pay-img
+		img
+			max-width: 165px
+@include respond-to(desktop-wide)
+	.s-pay-img img
+		max-width: 120px
+	.s-pay-img
+		top: -205px
+	.s-pay
+		padding: 0 15px
+
+@include respond-to(desktop)
+	.s-pay-img img
+		max-width: 78px
+	.s-pay-img
+		top: -130px
+
+@include respond-to(tablet)
+	.s-pay-inner
+		padding: 70px 0
+	.s-pay-line
+		padding-top: 30px
+	.s-pay-block
+		width: 100%
+		+ .s-pay-block
+			padding-top: 20px
+	.s-pay-item-text
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 15px;
+		line-height: 150%;
+	.s-pay-item
+		padding-left: 124px
+		padding-right: 18px
+		padding-bottom: 24px
+		&.item2
+			padding-top: 23px
+			padding-bottom: 20px
+		br
+			display: none
+	.s-pay-item-img
+		right: auto
+		left: 22px
+		top: 50%
+		transform: translateY(-50%)
+
+@include respond-to(mobile)
+	.s-pay-img
+		display: none
+	.s-pay
+		padding: 0
+	.s-pay-inner
+		border-radius: 0
+		padding: 39px 0 50px
+	
+

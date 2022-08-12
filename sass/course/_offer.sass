@@ -1,0 +1,93 @@
+.s-offer
+	padding-top: 89px
+	padding-bottom: 47px
+	background-image: url("../img/order-bg1.svg");
+	background-repeat: no-repeat;
+	background-position: -7px -97px;
+	.s-task-descr
+		max-width: 670px
+		margin: 0 auto
+	&-line
+		padding-top: 46px
+		margin: 0 -10px
+		padding-left: 4px
+		margin-bottom: -30px
+		position: relative
+		.s-what-slider-arrow
+			display: none
+		.s-what-slider-pagination
+			display: none
+		.swiper-wrapper
+			flex-wrap: wrap
+	&-block
+		padding: 0 10px 30px
+		width: 33.3%
+	&-item
+		height: 100%
+		background: rgba(243, 246, 249, 0.6);
+		border-radius: 30px;
+		padding: 50px 15px
+		&-icon
+			img
+				margin: 0 auto
+		&-text
+			max-width: 100px
+			padding-top: 10px
+			margin: 0 auto
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 15px;
+			line-height: 150%;
+			text-align: center;
+			color: #1F213A;
+
+@import ../responsive
+@include respond-to(desktop-wide)
+	.s-offer
+		background-position: -68px -97px;
+@include respond-to(desktop)
+
+@include respond-to(tablet-large)
+
+@include respond-to(tablet)
+	.s-offer-line .swiper-wrapper
+		flex-wrap: nowrap
+	.s-offer-line
+		position: relative
+		padding-bottom: 12px
+		.s-what-slider-arrow
+			display: block
+		.s-what-slider-pagination
+			display: flex
+			padding-top: 28px
+	.s-offer
+		background: none
+	.s-offer-item
+		width: 160px;
+		height: 167px
+		padding: 25px 15px
+	.s-offer-block
+		width: auto
+		padding: 0
+	.s-offer-line
+		margin: 0
+		margin-right: -20px
+		width: calc(100% + 20px)
+		padding-left: 0
+		padding-top: 28px
+	.s-offer-item-text
+		padding-top: 21px
+
+@include respond-to(mobile)
+	.s-offer
+		padding-top: 35px
+		padding-bottom: 23px
+
+
+@include respond-to(mobile1)
+	.s-offer
+
+		.s-what-title
+			max-width: 205px
+			margin: 0 auto

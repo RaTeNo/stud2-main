@@ -1,0 +1,110 @@
+body
+	margin: 0
+	padding: 0
+	-webkit-font-smoothing: antialiased
+
+*
+	box-sizing: border-box
+	outline: none
+
+input, button, input:active, button:active
+	outline: none
+input
+	-webkit-appearance: none;
+
+
+ul
+	list-style-type: none
+	padding: 0
+	margin: 0
+
+.clear
+	clear: both
+
+a:focus
+	outline: none
+
+
+.hidden-item
+	display: none
+
+.visible-item
+	display: block
+
+
+h1, h2, h3
+	margin-top: 0
+	margin-bottom: 0
+
+p
+	margin-top: 0
+	margin-bottom: 0
+
+a
+	text-decoration: none
+.img-responsive
+	display: block
+	max-width: 100%
+
+.wrap
+	max-width: 1205px
+	margin: 0 auto
+	padding: 0 15px
+
+.flex
+	display: -webkit-flex
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+	justify-content: flex-start;
+	align-items: flex-start;
+	align-content: stretch;
+	flex-wrap: wrap;
+.flexbetween
+	justify-content: space-between
+.flexcenter
+	justify-content: center
+.flexright
+	justify-content: flex-end
+.flexalcenter
+	align-items: center
+.flexalstretch
+	align-items: stretch
+.flexalccenter
+	align-content: center
+.flexnwr
+	flex-wrap: nowrap
+.inflex
+	display: inline-flex
+@import blocks/header
+@import blocks/top
+@import blocks/prices
+@import blocks/what
+@import blocks/info
+@import blocks/task
+@import blocks/how
+@import blocks/pay
+@import blocks/correct
+@import blocks/reviews
+@import blocks/gift
+@import blocks/articles
+@import blocks/faq
+@import blocks/for
+@import blocks/footer
+@import pages/main
+@import pages/order
+@import pages/course
+@import pages/service
+@import pages/form
+@import order/task
+@import course/offer
+@import course/unique
+@import course/more
+@import service/subjects
+@import form/form
+
+@import responsive
+@include respond-to(tablet)
+	.wrap
+		padding: 0 20px

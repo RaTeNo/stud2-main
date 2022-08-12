@@ -1,0 +1,133 @@
+.s-for
+	padding-top: 73px
+	position: relative
+	padding-bottom: 40px
+	&-img
+		position: absolute;
+		top: -230px;
+		left: 0;
+		z-index: 2;
+		background-position: 0 0;
+	&-inner
+		background: rgba(243, 246, 249, 0.6);
+		border-radius: 30px;
+		padding: 99px 0
+		max-width: 1620px;
+		margin: 0 auto
+	&-line
+		margin: 0 -10px
+	&-block
+		padding: 0 10px
+		width: 50%
+	&-item
+		height: 100%
+		background: #FFFFFF;
+		border-radius: 30px;
+		position: relative
+		padding: 26px 32px 30px
+		&-cont
+			position: relative
+			z-index: 2
+			max-width: 341px
+			display: flex;
+			flex-direction: column;
+			height: 100%
+		&-title
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 40px;
+			line-height: 120%;
+			color: #1F213A;
+			margin: 0;
+		&-descr
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 150%;
+			color: rgba(31,33,58,0.9);
+			padding-top: 14px
+			flex-grow: 1;
+			&.descr1
+				max-width: 280px
+			p + p
+				padding-top: 10px
+		&-button
+			padding-top: 30px
+		&-btn
+			max-width: inherit;
+			width: auto
+			display: inline-flex
+			padding: 0 38px
+		&-img
+			position: absolute
+			right: 0
+			bottom: 0
+
+@import ../responsive
+
+@include respond-to(tv)
+	.s-for-img
+		img
+			max-width: 165px
+@include respond-to(desktop-wide)
+	.s-for-img img
+		max-width: 70px
+	.s-for-img
+		top: -100px
+	.s-for
+		padding-left: 15px
+		padding-right: 15px
+
+@include respond-to(desktop)
+	.s-for-item-img
+		max-width: 150px
+	.s-for-img
+		top: -60px
+
+@include respond-to(tablet)
+	.s-for-block
+		width: 100%
+		+ .s-for-block
+			padding-top: 25px
+	.s-for-inner
+		padding: 70px 0
+
+@include respond-to(mobile)
+	.s-for
+		padding: 0
+		padding-top: 25px
+		.s-top-form-btn span
+			display: block
+	.s-for-img
+		display: none
+	.s-for-inner
+		border-radius: 0
+		padding: 48px 0
+	.s-for-item-title
+		font-size: 30px;
+		line-height: 130%;
+	.s-for-item
+		padding: 28px 30px 30px;
+	.s-for-item-button
+		padding-top: 202px
+	.s-for-item-img
+		display: block
+		max-width: 100%
+		width: 100%
+		bottom: 79px
+		img
+			margin: 0 auto
+	.s-for-item-btn
+		padding: 0 15px
+		display: flex
+		margin: 0 auto
+		width: 100%
+	.s-for-block + .s-for-block
+		padding-top: 18px
+	.s-for-item-button
+		display: block
+		width: 100%
+	.s-for-item-cont
+		max-width: 100%

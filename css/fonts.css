@@ -1,0 +1,36 @@
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    src: url("../fonts/helveticaneuecyr-black.eot"); /* IE9 */
+    src: url("../fonts/helveticaneuecyr-black.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/helveticaneuecyr-black.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/helveticaneuecyr-black.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/helveticaneuecyr-black.svg#HelveticaNeueCyr") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 1000;
+}
+
+
+
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    src: url("../fonts/helveticaneuecyr-heavy.eot"); /* IE9 */
+    src: url("../fonts/helveticaneuecyr-heavy.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/helveticaneuecyr-heavy.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/helveticaneuecyr-heavy.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/helveticaneuecyr-heavy.svg#HelveticaNeueCyr") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 900;
+}
+
+@font-face {
+    font-family: "HelveticaNeueCyr";
+    src: url("../fonts/helveticaneuecyr-medium.eot"); /* IE9 */
+    src: url("../fonts/helveticaneuecyr-medium.eot?#iefix") format("embedded-opentype"), /* IE6-IE8 */
+    url("../fonts/helveticaneuecyr-medium.woff") format("woff"), /* chrome, firefox */
+    url("../fonts/helveticaneuecyr-medium.ttf") format("truetype"), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */
+    url("../fonts/helveticaneuecyr-medium.svg#HelveticaNeueCyr") format("svg"); /* iOS 4.1- */
+    font-style: normal;
+    font-weight: 550;
+}
+
+

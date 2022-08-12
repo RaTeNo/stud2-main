@@ -1,0 +1,35 @@
+doctype html
+html(lang='ru')
+		include blocks/head/head.pug
+		body
+			.s-main
+				.s-main-img
+					picture
+						source(srcset='img/main-bg-mob.svg' media='(max-width: 565px)')
+						img.img-responsive(src="img/main-bg.svg" alt="img")
+				include blocks/header
+				include blocks/top
+				include blocks/prices
+				include blocks/what
+				.s-main-info
+					.s-main-info-img
+						img.img-responsive(src="img/main-info-bg.svg" alt="img")
+					include blocks/info
+					.s-main-task
+						include blocks/task
+						include blocks/how
+				include blocks/pay
+				.s-main-correct
+					include blocks/correct
+					.s-main-reviews
+						.s-main-reviews-img
+							img.img-responsive(src="img/main-reviews-bg.svg" alt="img")
+						include blocks/reviews
+						include blocks/gift
+						include blocks/articles
+				include blocks/faq
+				include blocks/for
+				include blocks/footer
+			include blocks/footer/scripts
+
+

@@ -1,0 +1,21 @@
+.s-order
+	position: relative
+	overflow: hidden
+	&-img
+		position: absolute
+		right: 0
+		top: 0
+	
+
+@import ../responsive
+
+@include respond-to(tv)
+	.s-order-img
+		right: -133px
+@include respond-to(desktop-wide)
+	.s-order-img
+		right: -250px
+@include respond-to(desktop-wide2)
+	.s-order-img
+		right: -325px
+

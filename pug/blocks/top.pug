@@ -1,0 +1,56 @@
+.s-top
+	.wrap
+		.s-top-inner
+			.s-top-img
+					picture
+						source(srcset='img/top-img1-mob.png' media='(max-width: 565px)')
+						img.img-responsive(src="img/top-img1.png" alt="img")
+			.s-top-line.flex
+				.s-top-block.block1
+					.s-top-contant
+						h1.s-top-title Студландия 
+						.s-top-descr Срочная помощь студентам в написании работ!
+						ul.s-top-list.flex.flexalstretch
+							li
+								.s-top-item
+									.s-top-item-icon
+										img.img-responsive(src="img/top-icon1.svg" alt="img")
+									.s-top-item-text Выполним  работу за 12ч!
+							li
+								.s-top-item
+									.s-top-item-icon
+										img.img-responsive(src="img/top-icon2.svg" alt="img")
+									.s-top-item-text 21 день  <br>на проверку
+							li
+								.s-top-item
+									.s-top-item-icon
+										img.img-responsive(src="img/top-icon3.svg" alt="img")
+									.s-top-item-text Бесплатные  доработки
+				.s-top-block.block2
+					.s-top-right.flex.flexright
+						.s-top-form
+							form(action="main.php")
+								.s-top-form-title Узнай стоимость  своей работы
+								.s-top-form-descr.flex.flexalcenter и получи бонус <strong class="flex flexnwr flexalcenter"><img src="img/top-gift.svg" alt="img"><span>200 руб.</span></strong> на первый заказ
+								.s-top-form-item
+									select.js-select-type(name="select-type")
+										option(value="")
+										option(value="Курсовая") Курсовая
+										option(value="Диплом") Диплом
+										option(value="Курсовая") Курсовая
+								.s-top-form-item
+									select.js-select-subject(name="select-subject")
+										option(value="")
+										option(value="Математика") Математика
+										option(value="Информатика") Информатика
+										option(value="Литература") Литература
+								.s-top-form-info.flex.flexnwr
+									.icon
+										img.img-responsive(src="img/top-icon-form.svg" alt="img") 
+									.text Гарантия уникальности <br>и проверка на антиплагиат
+								.s-top-form-item
+									.s-top-form-button
+										button(type="submit").s-top-form-btn.flex.flexcenter.flexalcenter
+											span Узнать стоимость
+
+						

@@ -1,0 +1,91 @@
+.s-unique
+	margin-top: -15px
+	position: relative
+	z-index: 2
+	padding-bottom: 56px
+	.s-info-status-button
+		display: none
+		padding-top: 25px
+		span
+			padding-left: 10px
+	&-block
+		max-width: 808px
+		margin: 0 auto
+	&-icon
+		width: 174px
+	&-cont
+		width: calc(100% - 174px)
+		padding-top: 19px;
+		padding-left: 45px;
+	&-title
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 120%;
+		color: #0DB960	
+	&-list
+		padding-top: 20px
+		padding-left: 5px
+		li
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 150%;
+			color: #1F213A;
+			padding-left: 38px
+			position: relative
+			&:before
+				content: ""
+				position: absolute
+				left: 0
+				top: 0
+				display: block
+				background-image: url("../img/icon-check1.svg")
+				width: 25px
+				height: 25px
+			+ li
+				margin-top: 15px
+
+
+@import ../responsive
+
+@include respond-to(tablet-large)
+	.s-unique-title
+		font-size: 33px
+@include respond-to(tablet)
+	.s-unique-icon
+		width: 85px
+		padding-top: 22px
+	.s-unique-cont
+		width: calc(100% - 85px)
+
+@include respond-to(mobile)
+	.s-unique-icon
+		position: absolute
+		right: 20px
+		top: 0
+		width: auto
+		padding-top: 0
+	.s-unique-cont
+		padding-left: 0
+		padding-top: 0
+		width: 100%
+	.s-unique-title
+		font-size: 26px;
+		line-height: 130%;
+		width: calc(100% - 100px)
+	.s-unique
+		margin-top: -125px
+		padding-bottom: 48px
+	.s-unique-list li
+		font-size: 15px;
+		line-height: 150%;
+	.s-unique-list
+		padding-top: 17px;
+		padding-left: 1px;
+		padding-right: 22px;
+		max-width: 320px
+	.s-unique .s-info-status-button
+		display: block

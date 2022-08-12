@@ -1,0 +1,156 @@
+.s-gift
+	max-width: 1620px;
+	background: radial-gradient(93.77% 93.77% at 3.1% 57.48%, rgba(210, 255, 174, 0.38) 0%, rgba(210, 255, 174, 0) 100%), rgba(13, 185, 96, 0.05);
+	border-radius: 30px;
+	margin: 0 auto
+	padding-top: 84px
+	padding-bottom: 86px
+	position: relative
+	z-index: 2
+	&-line
+		margin: 0 -15px
+	&-block
+		padding: 0 15px
+		&.block1
+			width: 60%
+		&.block2
+			width: 40%
+	&-cont
+		&-icon
+			width: 166px
+		&-text
+			width: calc(100% - 166px)
+			padding-left: 54px
+		&-title
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 900;
+			font-size: 40px;
+			line-height: 120%;
+			color: #0DB960	
+		&-descr
+			font-family: HelveticaNeueCyr;
+			font-style: normal;
+			font-weight: 550;
+			font-size: 20px;
+			line-height: 150%;
+			color: #1F213A;	
+			padding-top: 16px
+	&-offer
+		margin-right: 4px
+		max-width: 369px
+		width: 100%
+	&-info
+		font-family: HelveticaNeueCyr;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 40px;
+		line-height: 120%;
+		color: #1F213A;
+	&-button
+		padding-top: 17px
+	&-btn
+		max-width: 347px
+		width: 100%
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: bold;
+		font-size: 20px;
+		display: flex
+		span
+			span
+				padding-left: 10px
+		svg
+			path
+				transition: .3s all
+		&:hover
+			svg
+				path
+					fill: #000
+
+@import ../responsive
+@include respond-to(desktop-wide)
+	.s-gift
+		margin: 0 15px
+
+@include respond-to(desktop)
+	.s-gift-cont-title
+		font-size: 31px
+	.s-gift-cont-icon
+		width: 120px
+	.s-gift-cont-text
+		width: calc(100% - 120px)
+		padding-left: 25px
+	.s-gift-info
+		font-size: 31px
+	.s-gift-block.block1
+		width: 56%
+	.s-gift-line
+		justify-content: space-between
+@include respond-to(tablet-large)
+	.s-gift-block.block1
+		width: 100%
+	.s-gift-block.block2
+		width: 100%
+		padding-top: 30px
+		.right
+			justify-content: center
+	.s-gift-offer
+		max-width: 100%
+	.s-gift-info
+		text-align: center
+		br
+			display: none
+	.s-gift-btn
+		margin: 0 auto
+	.s-gift-cont-icon
+		width: 80px
+		margin: 0 auto
+	.s-gift-cont
+		display: block
+	.s-gift-cont-text
+		width: 100%
+		padding-left: 0
+		padding-top: 15px
+		text-align: center
+	.s-gift
+		padding: 70px 0
+	.s-gift-info
+		font-size: 23px
+	.s-gift-cont
+		max-width: 600px
+		margin: 0 auto
+
+@include respond-to(tablet)
+	
+
+@include respond-to(mobile)
+	.s-gift
+		margin: 0
+		border-radius: 0
+		padding: 31px 0 50px
+	.s-gift-cont-icon
+		width: 70px
+	.s-gift-cont-title
+		font-size: 20px;
+		line-height: 150%;
+	.s-gift-cont-text
+		padding: 17px 15px 0
+	.s-gift-cont-descr
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 150%;
+		padding: 14px 15px 0
+	.s-gift-info
+		font-size: 20px;
+		line-height: 150%;
+		max-width: 182px
+		margin: 0 auto
+	.s-gift-block.block2
+		padding-top: 27px
+	.s-gift-offer
+		margin-right: 0
+		padding: 0 10px
+	

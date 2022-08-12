@@ -1,0 +1,121 @@
+.s-reviews
+	padding-top: 83px
+	padding-bottom: 100px
+	position: relative
+	z-index: 2
+	.s-what-title
+		max-width: 800px
+		margin: 0 auto
+	&-stat
+		background: rgba(243, 246, 249, 0.6);
+		border-radius: 30px;
+		max-width: 578px
+		margin: 0 auto
+		margin-top: 32px
+		padding: 20px 54px
+		&-marks
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 150%;
+			color: #1F213A;
+			strong
+				font-weight: bold;
+		&-rating
+			padding: 0 15px
+			margin-left: 17px
+		&-points
+			font-family: Roboto;
+			font-style: normal;
+			font-weight: normal;
+			font-size: 18px;
+			line-height: 150%;
+			color: #1F213A;
+			strong
+				font-weight: bold;
+	&-slider
+		margin: 0 -10px
+		padding-top: 35px
+		position: relative
+		.swiper-slide
+			width: 100%
+			padding: 15px 15px 26px
+		&-item
+			background: rgba(255, 255, 255, 0.01);
+			border: 1px solid rgba(204, 213, 235, 0.4);
+			box-sizing: border-box;
+			border-radius: 30px;
+			padding: 28px 30px 31px
+			display: block
+			transition: .3s all
+			&:hover
+				background: #FFFFFF;
+				border: 1px solid #FFFFFF;
+				box-shadow: 0px 12.305px 25.9151px -13.383px rgba(16, 70, 41, 0.23);
+			&-name
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: bold;
+				font-size: 18px;
+				line-height: 150%;
+				text-align: center;
+				color: #0DB960;
+				display: block
+			&-info
+				padding-top: 6px
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 12px;
+				line-height: 150%;
+				text-align: center;
+				color: rgba(21,33,58,0.6);
+				display: block
+			&-text
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 150%;
+				text-align: center;
+				color: #1F213A;
+				display: block
+				padding-top: 17px
+			&-rating
+				padding-top: 16px
+				padding-left: 10px
+
+
+@include respond-to(tablet)
+	.s-reviews-stat
+		padding: 20px 30px
+	.s-reviews-slider
+		padding-top: 28px
+		margin: 0
+		margin-right: -20px
+		width: calc(100% + 20px)
+	.s-reviews-slider .swiper-slide
+		padding: 0
+		width: 280px
+		padding-bottom: 17px
+@include respond-to(mobile)
+	.s-reviews
+		padding-top: 35px
+		padding-bottom: 50px
+	.s-reviews-stat
+		justify-content: center
+	.s-reviews-stat-rating
+		padding: 9px 15px;
+		margin-left: 0;
+		width: 100%
+		display: -webkit-flex
+		display: -moz-flex;
+		display: -ms-flex;
+		display: -o-flex;
+		display: flex;
+		justify-content: center
+		align-items: flex-start;
+		align-content: stretch;
+		flex-wrap: wrap;
+	

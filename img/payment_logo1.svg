@@ -1,0 +1,28 @@
+<svg width="50" height="32" viewBox="0 0 50 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="CoinKite">
+<g id="CoinKite_2">
+<g id="Rectangle">
+<rect width="50" height="32" rx="3" fill="#0DB960"/>
+<rect width="50" height="32" rx="3" fill="url(#paint0_radial_715_11710)" fill-opacity="0.38"/>
+</g>
+<g id="Group">
+<g id="Group_2">
+<path id="Shape" fill-rule="evenodd" clip-rule="evenodd" d="M13.1431 12H6.42589C6.19107 12 6 11.8069 6 11.5697V6.43033C6 6.1933 6.19107 6 6.42589 6H13.1431C13.3782 6 13.5692 6.1933 13.5692 6.43033V11.5694C13.5695 11.8069 13.3784 12 13.1431 12ZM6.44853 11.5469H13.121V6.45301H6.44853V11.5469Z" fill="white"/>
+<path id="Shape_2" fill-rule="evenodd" clip-rule="evenodd" d="M10.5914 9.87719V10.5733C10.5914 10.7023 10.4675 10.807 10.3154 10.807H10.2676V11.2247H12.7589V9.87695H10.5914V9.87719Z" fill="white"/>
+<rect id="Rectangle-path" x="10.5898" y="8.37085" width="2.16773" height="1.24726" fill="white"/>
+<path id="Shape_3" fill-rule="evenodd" clip-rule="evenodd" d="M10.2676 6.7771V7.19293H10.3154C10.4673 7.19293 10.5914 7.2978 10.5914 7.42658V8.12464H12.7591V6.7771H10.2676Z" fill="white"/>
+<path id="Shape_4" fill-rule="evenodd" clip-rule="evenodd" d="M9.25471 10.8072C9.10239 10.8072 8.97875 10.7026 8.97875 10.5736V9.87744H6.79883V11.2252H9.29058V10.8075L9.25471 10.8072Z" fill="white"/>
+<rect id="Rectangle-path_2" x="6.79883" y="8.37085" width="2.17993" height="1.24726" fill="white"/>
+<path id="Shape_5" fill-rule="evenodd" clip-rule="evenodd" d="M8.97875 7.42683C8.97875 7.29804 9.10239 7.19318 9.25471 7.19318H9.29058V6.7771H6.79883V8.12488H8.97875V7.42683Z" fill="white"/>
+<path id="Shape_6" fill-rule="evenodd" clip-rule="evenodd" d="M10.3407 10.411C10.3407 10.4857 10.2809 10.5461 10.207 10.5461H9.36024C9.28635 10.5461 9.22656 10.4857 9.22656 10.411V7.60406C9.22656 7.5294 9.28635 7.46899 9.36024 7.46899H10.207C10.2809 7.46899 10.3407 7.5294 10.3407 7.60406V10.411Z" fill="white"/>
+</g>
+</g>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_radial_715_11710" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(1.5518 18.3927) rotate(10.132) scale(47.6286 31.842)">
+<stop stop-color="#D2FFAE"/>
+<stop offset="1" stop-color="#D2FFAE" stop-opacity="0"/>
+</radialGradient>
+</defs>
+</svg>

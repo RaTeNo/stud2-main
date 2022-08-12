@@ -1,0 +1,31 @@
+doctype html
+html(lang='ru')
+		include blocks/head/head.pug
+		body
+			.s-main.s-course.s-form
+				.s-main-img
+					picture
+						source(srcset='img/main-bg-mob.svg' media='(max-width: 565px)')
+						img.img-responsive(src="img/main-bg.svg" alt="img")
+				include blocks/header
+				include blocks/top3
+				include blocks/prices2
+				include course/offer
+				.s-main-info
+					.s-main-info-img
+						img.img-responsive(src="img/main-info-bg.svg" alt="img")
+					include blocks/info3
+					include course/unique
+					.s-main-task
+						include blocks/task
+						include blocks/how
+				include blocks/pay
+				.s-main-correct
+					include blocks/correct
+					include blocks/reviews
+					include blocks/gift
+				include blocks/footer1
+			include blocks/footer/scripts
+			include form/form
+
+

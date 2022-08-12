@@ -1,0 +1,151 @@
+.s-footer
+	padding-top: 53px
+	padding-bottom: 80px
+	&.style3
+		padding-top: 100px
+	&-pay
+		margin: 0 -20px
+		li
+			width: 20%
+			padding: 0 20px
+		&-item
+			padding: 10px 15px
+			background: rgba(243, 246, 249, 0.6);
+			border-radius: 30px;
+			height: 100px
+	&-bottom
+		padding-top: 44px
+		margin: 0 -15px
+	&-item
+		width: 25%
+		padding: 0 15px
+	&-menu
+		li
+			+ li
+				margin-top: 21px
+			a
+				font-family: Roboto;
+				font-style: normal;
+				font-weight: normal;
+				font-size: 15px;
+				line-height: 150%;
+				color: #1F213A;
+				transition: .3s all
+				position: relative
+				white-space: nowrap;
+				&:after
+					content: ""
+					display: block
+					position: absolute
+					left: -20px
+					bottom: -7px
+					background: #0DB960;
+					border-radius: 6px;
+					height: 2px
+					opacity: 0
+					transition: all .5s;
+					width: 100%
+				&:hover
+					color: #0DB960;
+					&:after
+						opacity: 0.2;
+						left: 0px;
+	&-contacts
+		display: flex;
+		flex-direction: column;
+		height: 100%
+		max-width: 220px
+		width: 100%
+	&-soc
+		flex-grow: 1;
+		li
+			margin-right: 20px
+			&:last-child
+				margin-right: 0
+			a
+				display: block
+				border-radius: 50%
+	&-copy
+		font-family: Roboto;
+		font-style: normal;
+		font-weight: normal;
+		font-size: 15px;
+		line-height: 150%;
+		color: rgba(31,33,58,0.4)
+
+@import ../responsive
+@include respond-to(desktop)
+	.s-footer-soc li
+		margin-right: 18px
+@include respond-to(tablet-large)
+	.s-footer-item
+		width: 33.3%
+	.s-footer-pay li
+		padding: 0 10px
+	.s-footer-pay
+		margin: 0 -10px
+	.s-footer-contacts
+		max-width: inherit
+		padding-top: 30px
+		border-top: 1px solid rgba(204,213,235,0.8)
+	.s-footer-item.item4
+		width: 100%
+		padding-top: 20px
+	.s-footer-copy
+		text-align: center
+		padding-top: 10px
+	.s-footer-soc
+		justify-content: center
+	.s-footer
+		padding-bottom: 30px
+
+@include respond-to(tablet)
+	.s-footer-pay li
+		padding: 0
+	.s-footer-pay-item
+		border-radius: 0
+		background-color: transparent
+	.s-footer-pay
+		margin: 0
+		border-radius: 30px
+		background: rgba(243, 246, 249, 0.6);
+	.s-footer-item
+		width: 100%
+		+ .s-footer-item
+			margin-top: 20px
+			.s-footer-menu
+				border-top: 1px solid rgba(204, 213, 235, 0.8);
+				padding-top: 20px
+
+@include respond-to(mobile)
+	.s-footer-pay
+		justify-content: space-between
+		padding: 27px 20px 30px
+		align-items: center
+		li
+			width: auto
+			margin-right: 15px
+			&:last-child
+				margin-right: 0
+	.s-footer-pay-item
+		padding: 0
+		height: auto
+	.s-footer-bottom
+		padding-top: 20px
+	.s-footer-item + .s-footer-item
+		margin-top: 31px
+	.s-footer-item + .s-footer-item .s-footer-menu
+		padding-top: 32px
+	.s-footer-item.item4
+		padding-top: 0
+	.s-footer-contacts
+		padding-top: 32px
+	.s-footer-soc
+		justify-content: flex-start
+	.s-footer-soc li
+		margin-right: 22px
+	.s-footer-copy
+		padding-top: 18px
+		text-align: left
+	.s-footer.style3
+		padding-top: 52px

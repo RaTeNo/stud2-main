@@ -1,0 +1,20 @@
+doctype html
+html(lang='ru')
+		include blocks/head/head.pug
+		body
+			.s-order
+				.s-order-img
+					picture
+						//- source(srcset='img/order-bg-mob.svg' media='(max-width: 565px)')
+						img.img-responsive(src="img/order-bg.svg" alt="img")
+				include blocks/header
+				include order/task
+				.s-main-info
+					.s-order-bg2
+						img.img-responsive(src="img/order-bg2.svg" alt="img")
+					include blocks/info1
+					include blocks/reviews
+				include blocks/footer
+			include blocks/footer/scripts
+
+

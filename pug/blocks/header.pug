@@ -1,0 +1,179 @@
+.s-header
+	.s-header-top
+		.wrap
+			.s-header-top-inner.flex.flexbetween.flexalcenter
+				.s-header-top-left.flex.flexalcenter
+					.s-header-logo
+						a.flex.flexalcenter(href="/")
+							picture
+								source(srcset='img/logo-mob.png' media='(max-width: 991px)')
+								img(src="img/logo.png" alt="img")
+							span.text Studlandia
+					ul.s-header-contacts.flex
+						li
+							.s-header-contacts-item.place.flex.flexalcenter.flexnwr
+								span.icon
+									img(src="img/header-pin.svg" alt="img")
+								span.text Москва
+						li
+							.s-header-contacts-item.time.flex.flexalcenter.flexnwr
+								span.icon
+									img(src="img/header-time.svg" alt="img")
+								span.text Время работы: 9:00-21:00
+				.s-header-top-right.flex.flexalcenter
+					ul.s-header-links.flex.flexalcenter
+						li
+							.s-header-links-item.phone
+								a(href="tel:+79775723954").flex.flexalcenter
+									img(src="img/header-phone.svg" alt="img")
+									span +7 (977) 572-39-54
+						li
+							.s-header-links-item.auth
+								a(href="#").flex.flexalcenter
+									img(src="img/header-auth.svg" alt="img")
+									span Авторизация
+					.s-header-button2
+						a(href="#").s-top-form-btn.flex.flexcenter.flexalcenter.s-header-btn1
+							span Заказать
+					.s-header-button1
+						a(href="#").s-top-form-btn.flex.flexcenter.flexalcenter.s-header-btn1
+							span Авторизация
+					.s-header-toggle.flex.flexcenter.flexalcenter
+						img(src="img/icon-menu.svg" alt="img")
+	.s-header-nav
+		.wrap
+			.s-header-nav-inner.flex.flexbetween.flexalcenter
+				.s-header-menu
+					a(href="#").flex.flexalcenter
+						img(src="img/header-menu.svg" alt="img")
+						span Разделы
+					.s-header-menuopen
+						.s-header-menuopen-line.flex
+							.s-header-menuopen-block
+								ul.s-footer-menu
+									li
+										a(href="#") Прайс
+									li
+										a(href="#") Отзывы
+									li
+										a(href="#") Библиотека
+									li
+										a(href="#") Правила использования сайта
+									li
+										a(href="#") Полезное
+							.s-header-menuopen-block
+								ul.s-footer-menu
+									li
+										a(href="#") Стать экспертом
+									li
+										a(href="#") Партнерская программа
+									li
+										a(href="#") Лента заказов
+									li
+										a(href="#") Эксперты
+							.s-header-menuopen-block
+								ul.s-footer-menu
+									li
+										a(href="#") Контакты
+									li
+										a(href="#") Новости
+									li
+										a(href="#") Пользовательское соглашение
+									li
+										a(href="#") Техническая поддержка
+									li
+										a(href="#") Обратная связь
+				ul.s-header-menulinks.flex.flexalcenter
+					li.active
+						a(href="#").s-header-menu-link
+							span Цена и сроки
+					li
+						a(href="#").s-header-menu-link
+							span Топ экспертов
+					li
+						a(href="#").s-header-menu-link
+							span Гарантии
+					li
+						a(href="#").s-header-menu-link
+							span Отзывы
+				.s-header-button
+					a(href="#").s-header-btn.flex.flexalcenter.flexcenter
+						img.svg(src="img/header-btn.svg" alt="img")
+						span Заказать
+.s-bg
+					
+.s-menu
+	.s-menu-close
+		img.svg(src="img/icon-close.svg" alt="img")
+	.s-menu-inner 
+		ul.s-menu-list
+			li
+				a(href="#") Цена и сроки
+			li
+				a(href="#") Топ экспертов
+			li
+				a(href="#") Гарантии
+			li
+				a(href="#") Отзывы
+			li.more
+				a(href="#") Разделы
+				ul.s-menu-list
+					li.back 
+						a(href="#").js-back Назад
+					li
+						a(href="#") Прайс
+					li
+						a(href="#") Отзывы
+					li
+						a(href="#") Библиотека
+					li
+						a(href="#") Правила использования сайта
+					li
+						a(href="#") Полезное
+					li
+						a(href="#") Стать экспертом
+					li
+						a(href="#") Партнерская программа
+					li
+						a(href="#") Лента заказов
+					li
+						a(href="#") Эксперты
+					li
+						a(href="#") Контакты
+					li
+						a(href="#") Новости
+					li
+						a(href="#") Пользовательское соглашение
+					li
+						a(href="#") Техническая поддержка
+					li
+						a(href="#") Обратная связь
+		.s-menu-bottom
+			.s-menu-buttons
+				.s-menu-button
+					a(href="#").s-header-btn.flex.flexalcenter.flexcenter
+						img.svg(src="img/header-btn.svg" alt="img")
+						span Заказать
+				.s-menu-button
+					.s-header-button1
+						a(href="#").s-top-form-btn.flex.flexcenter.flexalcenter.s-header-btn1
+							img.svg(src="img/icon-key.svg" alt="img")
+							span Авторизация
+			ul.s-header-contacts.flex
+				li
+					.s-header-contacts-item.time.flex.flexalcenter.flexnwr
+						span.icon
+							img(src="img/icon-phone.svg" alt="img")
+						span.text 
+							a(href="tel:+79775723954") +7 (977) 572-39-54
+				li
+					.s-header-contacts-item.place.flex.flexalcenter.flexnwr
+						span.icon
+							img(src="img/header-pin.svg" alt="img")
+						span.text Москва
+				li
+					.s-header-contacts-item.time.flex.flexalcenter.flexnwr
+						span.icon
+							img(src="img/header-time.svg" alt="img")
+						span.text Время работы: 9:00-21:00
+
