@@ -585,7 +585,7 @@
         align-items: flex-start;
         align-content: flex-start;
         flex-wrap: wrap;
-        order: 3;;
+        order: 3;
     }
 
     .content_flex aside > *
@@ -603,6 +603,11 @@
     .content_flex .content
     {
         width: 100%;
+    }
+
+    .content_flex .content.mob_last{
+        order: 4;
+        margin-top: 40px;
     }
 
 
@@ -2339,13 +2344,13 @@
     }
 
     .popup_menu img{
-        display: block;        
+        display: block;
         border: 2px solid #0DB960;
         border-radius:50%;
     }
 
     .balance img{
-        display: block;        
+        display: block;
         margin-bottom: 5px;
     }
     .balance{
